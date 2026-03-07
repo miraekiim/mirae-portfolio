@@ -19,6 +19,9 @@ export const publications: Publication[] = [
     venueType: "journal",
     year: 2026,
     url: "https://www.sciencedirect.com/science/article/pii/S0045790626001060",
+    doi: "10.1016/j.compeleceng.2026.111034",
+    abstract:
+      "Interest in applying artificial intelligence to domain-specific problems has been steadily increasing. Power engineering, a critical subdiscipline of electrical engineering, has so far seen relatively limited integration of advanced natural language processing (NLP) methods. To address this gap, we introduce Power Engineering BERT (PoE BERT), a domain-specific model based on Bidirectional Encoder Representations from Transformers (BERT), pretrained on a specialized corpus of one million open-access power engineering paper abstracts. In addition, we present the first set of NLP benchmarks tailored to power engineering, covering tasks such as document classification, question answering, and named entity recognition. Experimental results demonstrate that PoE BERT achieves an average performance improvement of approximately 13% compared with BERT-small while using a similar number of parameters. These findings underscore the importance of domain-specific pretraining for enhancing NLP performance in power engineering and highlight the contributions of this study in providing both a novel model and benchmark resources for future research in this domain.",
     tags: ["Pretrained LM", "Domain Adaptation", "NLP"],
   },
   {
@@ -78,6 +81,24 @@ export const publications: Publication[] = [
     year: 2024,
     url: "https://aclanthology.org/2024.emnlp-industry.49/",
     tags: ["QA System", "NLP", "Healthcare AI"],
+  },
+  {
+    id: "ijhci-2024",
+    title:
+      "Understanding User Preferences in Developing a Mental Healthcare AI Chatbot: A Conjoint Analysis Approach",
+    authors: [
+      "Mirae Kim",
+      "Jaedong Oh",
+      "Doha Kim",
+      "Jungwoo Shin",
+      "Daeho Lee",
+    ],
+    venue: "International Journal of Human-Computer Interaction",
+    venueType: "journal",
+    year: 2024,
+    url: "https://www.tandfonline.com/doi/abs/10.1080/10447318.2024.2353450",
+    doi: "10.1080/10447318.2024.2353450",
+    tags: ["Mental Health", "Chatbot", "Conjoint Analysis"],
   },
   {
     id: "cikm-2023",
