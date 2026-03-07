@@ -1,0 +1,116 @@
+import { Publication } from "@/types";
+
+export const publications: Publication[] = [
+  {
+    id: "caee-2026",
+    title:
+      "Sentiment and topic analysis of childhood cancer survivor communities using advanced NLP techniques",
+    authors: ["Mirae Kim", "Hayoung Oh", "Min Ah Kim"],
+    venue: "Computers & Electrical Engineering",
+    venueType: "journal",
+    year: 2026,
+    url: "https://www.sciencedirect.com/science/article/pii/S0045790626001060",
+    tags: ["Topic Modeling", "Sentiment Analysis", "NLP"],
+  },
+  {
+    id: "eswa-2025",
+    title:
+      "GPT-empowered question-answer dataset for informative and empathetic support for Korean childhood cancer survivors",
+    authors: [
+      "Mirae Kim",
+      "Kyubum Hwang",
+      "Hayoung Oh",
+      "Heejin Kim",
+      "Min Ah Kim",
+    ],
+    venue: "Expert Systems with Applications",
+    venueType: "journal",
+    year: 2025,
+    url: "https://linkinghub.elsevier.com/retrieve/pii/S095741742503163X",
+    tags: ["GPT", "Dataset", "Healthcare AI"],
+  },
+  {
+    id: "sswr-2025",
+    title:
+      "Identifying Inquiries for an Artificial Intelligence-Based Informatic Chatbot Among Young Adult Survivors of Childhood Cancer Using a Topic Modeling Approach",
+    authors: [
+      "Min Ah Kim",
+      "Mirae Kim",
+      "Hayoung Oh",
+      "Yehwi Park",
+      "Chaerim Park",
+      "Chungyeon Lee",
+      "Kyubum Hwang",
+    ],
+    venue: "SSWR 2025",
+    venueType: "conference",
+    year: 2025,
+    url: "https://sswr.confex.com/sswr/2025/webprogram/Paper55573.html",
+    tags: ["Topic Modeling", "Chatbot", "Cancer Survivorship"],
+  },
+  {
+    id: "emnlp-2024",
+    title:
+      "MILD Bot: Multidisciplinary Childhood Cancer Survivor Question-Answering Bot",
+    authors: [
+      "Mirae Kim",
+      "Kyubum Hwang",
+      "Hayoung Oh",
+      "Min Ah Kim",
+      "Chaerim Park",
+      "Yehwi Park",
+      "Chungyeon Lee",
+    ],
+    venue: "EMNLP 2024 Industry Track",
+    venueType: "conference",
+    year: 2024,
+    url: "https://aclanthology.org/2024.emnlp-industry.49/",
+    tags: ["QA System", "NLP", "Healthcare AI"],
+  },
+  {
+    id: "cikm-2023",
+    title:
+      "Can a Chatbot be Useful in Childhood Cancer Survivorship? Development of a Chatbot for Survivors of Childhood Cancer",
+    authors: [
+      "Mirae Kim",
+      "Kyubum Hwang",
+      "Hayoung Oh",
+      "Heejin Kim",
+      "Min Ah Kim",
+    ],
+    venue: "ACM CIKM 2023",
+    venueType: "conference",
+    year: 2023,
+    doi: "10.1145/3583780.3615234",
+    url: "https://dl.acm.org/doi/10.1145/3583780.3615234",
+    tags: ["Chatbot", "Healthcare AI", "LLM"],
+  },
+  {
+    id: "mdpi-2023",
+    title:
+      "Development of an Empathy Chatbot for the Emotional Support of Childhood Cancer Survivors",
+    authors: [
+      "Mirae Kim",
+      "Kyubum Hwang",
+      "Hayoung Oh",
+      "Heejin Kim",
+      "Min Ah Kim",
+    ],
+    venue: "Applied Sciences (MDPI)",
+    venueType: "journal",
+    year: 2023,
+    url: "https://www.mdpi.com/2076-3417/13/10/6223",
+    tags: ["Empathy", "Chatbot", "Deep Learning"],
+  },
+  {
+    id: "jkiice-2023",
+    title: "우울 증상 완화를 위한 공감형 챗봇 개발에 관한 연구",
+    authors: ["Mirae Kim", "Taehee Park", "Hayoung Oh"],
+    venue: "Journal of KIICE",
+    venueType: "journal",
+    year: 2023,
+    url: "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE11419604",
+    doi: "10.6109/jkiice.2023.27.5.611",
+    tags: ["Empathy", "Chatbot", "Mental Health"],
+  },
+];

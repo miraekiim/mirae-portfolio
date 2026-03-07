@@ -1,0 +1,43 @@
+import { Experience } from "@/types";
+
+export const experiences: Experience[] = [
+  {
+    id: "postech",
+    role: "Research Assistant",
+    organization: "POSTECH Institute of Artificial Intelligence (PIAI)",
+    location: "Pohang, South Korea",
+    startDate: "Jan 2021",
+    endDate: "Mar 2021",
+    description: [
+      "Organized and coded survey response data into structured datasets for an advanced COVID-19 contact tracing program",
+      "Applied data processing and analysis techniques using Python",
+    ],
+    skills: ["Python", "Data Analysis"],
+  },
+  {
+    id: "monami",
+    role: "Merchandiser",
+    organization: "monami Co., Ltd.",
+    location: "Yongin, South Korea",
+    startDate: "May 2018",
+    endDate: "Nov 2019",
+    description: [
+      "Reduced 97.5% of late delivery fees ($24K to $600) by forecasting the exact number of stock items based on sales data analysis",
+      "Managed inventory planning and supply chain optimization through data-driven forecasting",
+    ],
+    skills: ["Data Analysis", "IBM SPSS Statistics", "Forecasting"],
+  },
+  {
+    id: "oracle",
+    role: "Summer Intern",
+    organization: "Oracle",
+    location: "Seoul, South Korea",
+    startDate: "Jun 2016",
+    endDate: "Jul 2016",
+    description: [
+      "Increased product awareness of Oracle Cloud services by producing promotional videos",
+      "Managed customer data and published monthly trend reports",
+    ],
+    skills: ["Microsoft Office", "Data Management"],
+  },
+];
