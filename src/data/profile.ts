@@ -1,8 +1,8 @@
 export const profile = {
   name: "Mirae Kim",
   title: "AI Researcher",
-  tagline: "NLP & Healthcare AI",
-  affiliation: "Sungkyunkwan University",
+  tagline: "NLP · Financial AI · Healthcare AI",
+  affiliation: "Kakaobank",
   bio: `I am an AI researcher specializing in Natural Language Processing and its applications in healthcare. My research focuses on developing empathetic and informative AI chatbot systems to support childhood cancer survivors — bridging the gap between advanced AI technology and real-world psychosocial needs.
 
 With a foundation in Statistics and a Master's degree in Artificial Intelligence, I bring a data-driven approach to building conversational AI systems that can provide meaningful emotional and informational support.`,

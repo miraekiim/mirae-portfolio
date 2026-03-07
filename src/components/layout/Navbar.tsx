@@ -126,7 +126,7 @@ export function Navbar() {
             exit={{ opacity: 0 }}
             className="fixed inset-0 z-40 bg-[#0a0a0f]/95 backdrop-blur-xl md:hidden"
           >
-            <div className="flex h-full flex-col items-center justify-center gap-8">
+            <div className="flex h-full flex-col items-center justify-center gap-6">
               {navItems.map(({ label, href }, i) => (
                 <motion.button
                   key={href}

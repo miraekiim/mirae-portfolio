@@ -7,7 +7,7 @@ import { SectionWrapper, SectionHeading } from "@/components/ui/SectionWrapper";
 export function About() {
   return (
     <SectionWrapper id="about">
-      <div className="grid gap-12 md:grid-cols-[280px_1fr] md:gap-16">
+      <div className="grid gap-8 md:grid-cols-[280px_1fr] md:gap-16">
         {/* Avatar placeholder */}
         <motion.div
           initial={{ opacity: 0, scale: 0.9 }}
@@ -17,9 +17,9 @@ export function About() {
           className="flex justify-center md:justify-start"
         >
           <div className="relative">
-            <div className="h-56 w-56 rounded-full bg-gradient-to-br from-[#0d9488]/20 to-[#7c3aed]/20 p-[2px]">
+            <div className="h-40 w-40 sm:h-48 sm:w-48 md:h-56 md:w-56 rounded-full bg-gradient-to-br from-[#0d9488]/20 to-[#7c3aed]/20 p-[2px]">
               <div className="flex h-full w-full items-center justify-center rounded-full bg-[#111118]">
-                <span className="bg-gradient-to-br from-[#0d9488] to-[#7c3aed] bg-clip-text font-serif text-5xl font-bold text-transparent">
+                <span className="bg-gradient-to-br from-[#0d9488] to-[#7c3aed] bg-clip-text font-serif text-4xl md:text-5xl font-bold text-transparent">
                   MK
                 </span>
               </div>

@@ -2,6 +2,32 @@ import { Experience } from "@/types";
 
 export const experiences: Experience[] = [
   {
+    id: "kakaobank",
+    role: "Artificial Intelligence Researcher",
+    organization: "Kakaobank",
+    location: "Seongnam, South Korea",
+    startDate: "Dec 2024",
+    endDate: "Present",
+    description: [
+      "Developed and fine-tuned domain-specific large language models for financial services",
+      "Designed NLP pipelines to enhance customer-facing AI products",
+    ],
+    skills: ["NLP", "LLM", "Python"],
+  },
+  {
+    id: "kolon-benit",
+    role: "Artificial Intelligence Researcher",
+    organization: "KOLON BENIT",
+    location: "Gwacheon, South Korea",
+    startDate: "Sep 2024",
+    endDate: "Dec 2024",
+    description: [
+      "Built domain-adapted language models for enterprise applications",
+      "Conducted research on LLM optimization and deployment strategies",
+    ],
+    skills: ["NLP", "LLM", "Python"],
+  },
+  {
     id: "postech",
     role: "Research Assistant",
     organization: "POSTECH Institute of Artificial Intelligence (PIAI)",

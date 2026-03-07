@@ -17,7 +17,7 @@ export function Experience() {
         {/* Timeline line */}
         <div className="absolute left-[7px] top-2 bottom-2 w-px bg-gradient-to-b from-[#0d9488]/40 via-[#7c3aed]/20 to-transparent md:left-1/2 md:-translate-x-px" />
 
-        <div className="space-y-12">
+        <div className="space-y-8 md:space-y-12">
           {experiences.map((exp, i) => (
             <motion.div
               key={exp.id}
@@ -36,7 +36,7 @@ export function Experience() {
 
               {/* Date - left side on desktop */}
               <div
-                className={`pl-8 md:pl-0 ${i % 2 === 0 ? "md:text-right" : "md:order-2 md:text-left md:pl-8"}`}
+                className={`pl-7 md:pl-0 ${i % 2 === 0 ? "md:text-right" : "md:order-2 md:text-left md:pl-8"}`}
               >
                 <p className="text-sm text-white/30">
                   {exp.startDate} — {exp.endDate}
@@ -46,7 +46,7 @@ export function Experience() {
 
               {/* Content - right side on desktop */}
               <div
-                className={`group ml-8 rounded-xl border border-white/5 bg-white/[0.02] p-5 transition-all duration-300 hover:border-white/10 hover:bg-white/[0.04] md:ml-0 ${i % 2 === 0 ? "md:pl-8" : "md:order-1 md:pr-8 md:text-right"}`}
+                className={`group ml-7 rounded-xl border border-white/5 bg-white/[0.02] p-4 md:p-5 transition-all duration-300 hover:border-white/10 hover:bg-white/[0.04] md:ml-0 ${i % 2 === 0 ? "md:pl-8" : "md:order-1 md:pr-8 md:text-right"}`}
               >
                 <h3 className="font-serif text-lg font-semibold text-white/90">
                   {exp.role}

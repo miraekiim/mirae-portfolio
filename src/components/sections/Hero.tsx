@@ -117,7 +117,7 @@ export function Hero() {
 
       <div className="relative z-10 flex flex-col items-center gap-6 px-6 text-center">
         {/* Name */}
-        <h1 className="font-serif text-5xl font-bold tracking-tight sm:text-6xl md:text-8xl">
+        <h1 className="font-serif text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl lg:text-8xl">
           {nameChars.map((char, i) => (
             <motion.span
               key={i}

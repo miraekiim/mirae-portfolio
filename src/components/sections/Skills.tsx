@@ -13,7 +13,7 @@ export function Skills() {
       <SectionHeading>Skills</SectionHeading>
       <div className="mt-4 h-px w-16 bg-gradient-to-r from-[#0d9488] to-[#7c3aed]" />
 
-      <div className="mt-12 grid gap-8 sm:grid-cols-2">
+      <div className="mt-12 grid gap-6 sm:gap-8 sm:grid-cols-2">
         {skillCategories.map((cat, i) => (
           <motion.div
             key={cat.category}

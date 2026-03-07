@@ -22,7 +22,7 @@ export function Education() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: i * 0.15 }}
-            className="group relative overflow-hidden rounded-xl border border-white/5 bg-white/[0.02] p-6 transition-all duration-300 hover:border-white/10 hover:bg-white/[0.04]"
+            className="group relative overflow-hidden rounded-xl border border-white/5 bg-white/[0.02] p-4 sm:p-6 transition-all duration-300 hover:border-white/10 hover:bg-white/[0.04]"
           >
             {/* Subtle corner accent */}
             <div className="absolute right-0 top-0 h-16 w-16 bg-gradient-to-bl from-[#7c3aed]/5 to-transparent" />
