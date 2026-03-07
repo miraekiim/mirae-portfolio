@@ -3,6 +3,7 @@
 import { useEffect, useRef } from "react";
 import { motion } from "motion/react";
 import { ChevronDown } from "lucide-react";
+import { profile } from "@/data/profile";
 
 function ParticleCanvas() {
   const canvasRef = useRef<HTMLCanvasElement>(null);
@@ -142,9 +143,9 @@ export function Hero() {
           transition={{ duration: 0.8, delay: 1.0 }}
           className="max-w-lg text-lg tracking-wide text-white/50 md:text-xl"
         >
-          AI Researcher{" "}
-          <span className="mx-2 text-white/20">&#x2022;</span> NLP &amp;
-          Healthcare AI
+          {profile.title}{" "}
+          <span className="mx-2 text-white/20">&#x2022;</span>{" "}
+          {profile.tagline}
         </motion.p>
 
         {/* Affiliation */}
@@ -154,7 +155,7 @@ export function Hero() {
           transition={{ duration: 0.8, delay: 1.3 }}
           className="text-sm tracking-widest text-white/25 uppercase"
         >
-          Sungkyunkwan University
+          {profile.affiliation}
         </motion.p>
       </div>
 
