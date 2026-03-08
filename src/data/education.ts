@@ -4,7 +4,7 @@ export const education: Education[] = [
   {
     id: "skku",
     degree: "Master of Science",
-    field: "Artificial Intelligence",
+    field: "Applied Artificial Intelligence",
     institution: "Sungkyunkwan University",
     startDate: "Aug 2022",
     endDate: "Aug 2024",
@@ -12,7 +12,7 @@ export const education: Education[] = [
   {
     id: "konkuk",
     degree: "Bachelor of Science",
-    field: "Statistics",
+    field: "Applied Statistics",
     institution: "Konkuk University",
     startDate: "Mar 2013",
     endDate: "Feb 2017",

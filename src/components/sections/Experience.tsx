@@ -11,11 +11,11 @@ export function Experience() {
   return (
     <SectionWrapper id="experience">
       <SectionHeading>Experience</SectionHeading>
-      <div className="mt-4 h-px w-16 bg-gradient-to-r from-[#0d9488] to-[#7c3aed]" />
+      <div className="mt-4 h-px w-16 bg-slate-200" />
 
       <div className="relative mt-12">
         {/* Timeline line */}
-        <div className="absolute left-[7px] top-2 bottom-2 w-px bg-gradient-to-b from-teal-300 via-violet-200 to-transparent md:left-1/2 md:-translate-x-px" />
+        <div className="absolute left-[7px] top-2 bottom-2 w-px bg-slate-200 md:left-1/2 md:-translate-x-px" />
 
         <div className="space-y-8 md:space-y-12">
           {experiences.map((exp, i) => (

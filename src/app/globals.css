@@ -44,8 +44,8 @@
   --radius-2xl: calc(var(--radius) * 1.8);
   --radius-3xl: calc(var(--radius) * 2.2);
   --radius-4xl: calc(var(--radius) * 2.6);
-  --color-accent-teal: #0d9488;
-  --color-accent-violet: #7c3aed;
+  --color-gradient-start: #334155;
+  --color-gradient-end: #6366f1;
 }
 
 :root {
@@ -66,21 +66,21 @@
   --destructive: oklch(0.704 0.191 22.216);
   --border: #e2e8f0;
   --input: #e2e8f0;
-  --ring: #7c3aed;
-  --chart-1: #0d9488;
-  --chart-2: #7c3aed;
+  --ring: #6366f1;
+  --chart-1: #334155;
+  --chart-2: #6366f1;
   --chart-3: #06b6d4;
   --chart-4: #8b5cf6;
   --chart-5: #14b8a6;
   --radius: 0.625rem;
   --sidebar: #f8f9fa;
   --sidebar-foreground: #1a1a2e;
-  --sidebar-primary: #7c3aed;
+  --sidebar-primary: #6366f1;
   --sidebar-primary-foreground: #ffffff;
   --sidebar-accent: #f1f5f9;
   --sidebar-accent-foreground: #1a1a2e;
   --sidebar-border: #e2e8f0;
-  --sidebar-ring: #7c3aed;
+  --sidebar-ring: #6366f1;
 }
 
 @layer base {

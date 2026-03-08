@@ -31,7 +31,7 @@ export function Contact() {
           className="font-heading text-3xl font-bold md:text-4xl"
         >
           Let&apos;s{" "}
-          <span className="bg-gradient-to-r from-[#0d9488] to-[#7c3aed] bg-clip-text text-transparent">
+          <span className="text-indigo-500">
             Connect
           </span>
         </motion.h2>
@@ -53,7 +53,7 @@ export function Contact() {
           whileInView={{ scaleX: 1 }}
           viewport={{ once: true }}
           transition={{ delay: 0.2, duration: 0.6 }}
-          className="mx-auto mt-8 h-px w-24 bg-gradient-to-r from-[#0d9488] to-[#7c3aed]"
+          className="mx-auto mt-8 h-px w-24 bg-slate-200"
         />
 
         <div className="mt-10 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">

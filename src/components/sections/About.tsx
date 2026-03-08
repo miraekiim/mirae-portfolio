@@ -17,9 +17,9 @@ export function About() {
           className="flex justify-center md:justify-start"
         >
           <div className="relative">
-            <div className="h-40 w-40 sm:h-48 sm:w-48 md:h-56 md:w-56 rounded-full bg-gradient-to-br from-[#0d9488]/20 to-[#7c3aed]/20 p-[2px]">
-              <div className="flex h-full w-full items-center justify-center rounded-full bg-slate-50">
-                <span className="bg-gradient-to-br from-[#0d9488] to-[#7c3aed] bg-clip-text font-heading text-4xl md:text-5xl font-bold text-transparent">
+            <div className="h-40 w-40 sm:h-48 sm:w-48 md:h-56 md:w-56 rounded-full border border-slate-200 bg-slate-50 p-[2px]">
+              <div className="flex h-full w-full items-center justify-center rounded-full bg-white">
+                <span className="font-heading text-4xl md:text-5xl font-bold text-indigo-500">
                   MK
                 </span>
               </div>
@@ -31,7 +31,7 @@ export function About() {
         <div className="space-y-6">
           <SectionHeading>About</SectionHeading>
 
-          <div className="h-px w-16 bg-gradient-to-r from-[#0d9488] to-[#7c3aed]" />
+          <div className="h-px w-16 bg-slate-200" />
 
           <div className="space-y-4 text-base leading-relaxed text-slate-600">
             {profile.bio.split("\n\n").map((paragraph, i) => (

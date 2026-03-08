@@ -63,10 +63,10 @@ export function Navbar() {
             }}
             className="group relative font-heading text-xl font-bold"
           >
-            <span className="bg-gradient-to-r from-[#0d9488] to-[#7c3aed] bg-clip-text text-transparent">
+            <span className="text-indigo-500 font-bold">
               MK
             </span>
-            <span className="absolute -bottom-1 left-0 h-px w-0 bg-gradient-to-r from-[#0d9488] to-[#7c3aed] transition-all duration-300 group-hover:w-full" />
+            <span className="absolute -bottom-1 left-0 h-px w-0 bg-indigo-500 transition-all duration-300 group-hover:w-full" />
           </a>
 
           {/* Desktop nav */}
@@ -89,7 +89,7 @@ export function Navbar() {
                   {isActive && (
                     <motion.span
                       layoutId="nav-indicator"
-                      className="absolute inset-x-2 -bottom-px h-px bg-gradient-to-r from-[#0d9488] to-[#7c3aed]"
+                      className="absolute inset-x-2 -bottom-px h-px bg-indigo-500"
                       transition={{
                         type: "spring",
                         stiffness: 380,

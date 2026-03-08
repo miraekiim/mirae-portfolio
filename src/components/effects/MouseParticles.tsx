@@ -12,7 +12,7 @@ interface Particle {
   opacity: number;
 }
 
-const COLORS = ["#0d9488", "#7c3aed", "#f59e0b", "#ef4444", "#3b82f6"];
+const COLORS = ["#334155", "#6366f1", "#94a3b8", "#818cf8", "#475569"];
 const PARTICLE_COUNT = 90;
 const CONNECT_DIST = 130;
 const CONNECT_DIST_SQ = CONNECT_DIST * CONNECT_DIST;
@@ -20,7 +20,7 @@ const LINE_OPACITY = 0.2;
 const MOUSE_RADIUS = 180;
 const MOUSE_RADIUS_SQ = MOUSE_RADIUS * MOUSE_RADIUS;
 const MOUSE_LINE_OPACITY = 0.4;
-const LINE_COLOR = "13,148,136";
+const LINE_COLOR = "51,65,85";
 const BASE_SPEED = 0.5;
 
 export function MouseParticles() {
@@ -147,7 +147,7 @@ export function MouseParticles() {
             ctx.beginPath();
             ctx.moveTo(mouseX, mouseY);
             ctx.lineTo(p.x, p.y);
-            ctx.strokeStyle = `rgba(124,58,237,${alpha})`;
+            ctx.strokeStyle = `rgba(99,102,241,${alpha})`;
             ctx.stroke();
           }
         }

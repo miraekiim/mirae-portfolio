@@ -53,7 +53,7 @@ function AuthorList({ authors }: { authors: string[] }) {
       {authors.map((author, i) => (
         <span key={i}>
           {author === "Mirae Kim" ? (
-            <span className="bg-gradient-to-r from-[#0d9488] to-[#7c3aed] bg-clip-text font-medium text-transparent">
+            <span className="font-semibold text-indigo-500">
               {author}
             </span>
           ) : (
@@ -91,7 +91,7 @@ export function Publications() {
       <div className="flex flex-col gap-6 sm:flex-row sm:items-end sm:justify-between">
         <div>
           <SectionHeading>Publications</SectionHeading>
-          <div className="mt-4 h-px w-16 bg-gradient-to-r from-[#0d9488] to-[#7c3aed]" />
+          <div className="mt-4 h-px w-16 bg-slate-200" />
         </div>
 
         {/* Filter tabs */}
