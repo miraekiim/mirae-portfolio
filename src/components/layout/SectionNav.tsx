@@ -19,21 +19,36 @@ export function SectionNav() {
   }, []);
 
   useEffect(() => {
-    const observers: IntersectionObserver[] = [];
-    navItems.forEach(({ href }) => {
-      const id = href.replace("#", "");
-      const el = document.getElementById(id);
-      if (!el) return;
-      const obs = new IntersectionObserver(
-        ([entry]) => {
-          if (entry.isIntersecting) setActiveSection(id);
-        },
-        { rootMargin: "-30% 0px -30% 0px" }
-      );
-      obs.observe(el);
-      observers.push(obs);
-    });
-    return () => observers.forEach((o) => o.disconnect());
+    const ids = navItems.map(({ href }) => href.replace("#", ""));
+
+    const findActive = () => {
+      const midY = window.innerHeight / 2;
+      let closest = "";
+      let closestDist = Infinity;
+
+      for (const id of ids) {
+        const el = document.getElementById(id);
+        if (!el) continue;
+        const rect = el.getBoundingClientRect();
+        // distance from section top to viewport center
+        const dist = Math.abs(rect.top - midY);
+        // also check if viewport center is inside the section
+        if (rect.top <= midY && rect.bottom >= midY) {
+          closest = id;
+          break;
+        }
+        if (dist < closestDist) {
+          closestDist = dist;
+          closest = id;
+        }
+      }
+
+      if (closest) setActiveSection(closest);
+    };
+
+    window.addEventListener("scroll", findActive, { passive: true });
+    findActive();
+    return () => window.removeEventListener("scroll", findActive);
   }, []);
 
   const handleClick = (href: string) => {
