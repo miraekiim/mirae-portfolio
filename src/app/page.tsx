@@ -6,10 +6,12 @@ import { Skills } from "@/components/sections/Skills";
 import { Publications } from "@/components/sections/Publications";
 import { Contact } from "@/components/sections/Contact";
 import { Footer } from "@/components/layout/Footer";
+import { SectionNav } from "@/components/layout/SectionNav";
 
 export default function Home() {
   return (
     <main>
+      <SectionNav />
       <Hero />
       <About />
       <Experience />
