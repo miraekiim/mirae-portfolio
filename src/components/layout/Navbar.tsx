@@ -50,7 +50,7 @@ export function Navbar() {
         className={cn(
           "fixed top-0 z-50 w-full transition-all duration-500",
           scrolled
-            ? "border-b border-white/5 bg-[#0a0a0f]/80 backdrop-blur-xl"
+            ? "border-b border-slate-200 bg-white/80 backdrop-blur-xl"
             : "bg-transparent"
         )}
       >
@@ -61,7 +61,7 @@ export function Navbar() {
               e.preventDefault();
               window.scrollTo({ top: 0, behavior: "smooth" });
             }}
-            className="group relative font-serif text-xl font-bold"
+            className="group relative font-heading text-xl font-bold"
           >
             <span className="bg-gradient-to-r from-[#0d9488] to-[#7c3aed] bg-clip-text text-transparent">
               MK
@@ -81,8 +81,8 @@ export function Navbar() {
                   className={cn(
                     "relative px-4 py-2 text-sm transition-colors",
                     isActive
-                      ? "text-white"
-                      : "text-white/50 hover:text-white/80"
+                      ? "text-slate-900"
+                      : "text-slate-500 hover:text-slate-700"
                   )}
                 >
                   {label}
@@ -109,9 +109,9 @@ export function Navbar() {
             aria-label="Toggle menu"
           >
             {mobileOpen ? (
-              <X className="h-5 w-5 text-white" />
+              <X className="h-5 w-5 text-slate-700" />
             ) : (
-              <Menu className="h-5 w-5 text-white" />
+              <Menu className="h-5 w-5 text-slate-700" />
             )}
           </button>
         </div>
@@ -124,7 +124,7 @@ export function Navbar() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            className="fixed inset-0 z-40 bg-[#0a0a0f]/95 backdrop-blur-xl md:hidden"
+            className="fixed inset-0 z-40 bg-white/95 backdrop-blur-xl md:hidden"
           >
             <div className="flex h-full flex-col items-center justify-center gap-6">
               {navItems.map(({ label, href }, i) => (
@@ -134,7 +134,7 @@ export function Navbar() {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: i * 0.08 }}
                   onClick={() => handleClick(href)}
-                  className="font-serif text-2xl text-white/80 transition-colors hover:text-white"
+                  className="font-heading text-2xl text-slate-700 transition-colors hover:text-slate-900"
                 >
                   {label}
                 </motion.button>

@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter, Playfair_Display } from "next/font/google";
+import { Inter, Sora } from "next/font/google";
 import { Navbar } from "@/components/layout/Navbar";
 import "./globals.css";
 
@@ -9,8 +9,8 @@ const inter = Inter({
   display: "swap",
 });
 
-const playfair = Playfair_Display({
-  variable: "--font-serif",
+const sora = Sora({
+  variable: "--font-heading",
   subsets: ["latin"],
   display: "swap",
 });
@@ -47,9 +47,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="dark">
+    <html lang="en">
       <body
-        className={`${inter.variable} ${playfair.variable} font-sans antialiased`}
+        className={`${inter.variable} ${sora.variable} font-sans antialiased`}
       >
         <Navbar />
         {children}

@@ -18,14 +18,12 @@ export function About() {
         >
           <div className="relative">
             <div className="h-40 w-40 sm:h-48 sm:w-48 md:h-56 md:w-56 rounded-full bg-gradient-to-br from-[#0d9488]/20 to-[#7c3aed]/20 p-[2px]">
-              <div className="flex h-full w-full items-center justify-center rounded-full bg-[#111118]">
-                <span className="bg-gradient-to-br from-[#0d9488] to-[#7c3aed] bg-clip-text font-serif text-4xl md:text-5xl font-bold text-transparent">
+              <div className="flex h-full w-full items-center justify-center rounded-full bg-slate-50">
+                <span className="bg-gradient-to-br from-[#0d9488] to-[#7c3aed] bg-clip-text font-heading text-4xl md:text-5xl font-bold text-transparent">
                   MK
                 </span>
               </div>
             </div>
-            {/* Glow ring */}
-            <div className="absolute -inset-2 -z-10 rounded-full bg-gradient-to-br from-[#0d9488]/10 to-[#7c3aed]/10 blur-xl" />
           </div>
         </motion.div>
 
@@ -35,7 +33,7 @@ export function About() {
 
           <div className="h-px w-16 bg-gradient-to-r from-[#0d9488] to-[#7c3aed]" />
 
-          <div className="space-y-4 text-base leading-relaxed text-white/60">
+          <div className="space-y-4 text-base leading-relaxed text-slate-600">
             {profile.bio.split("\n\n").map((paragraph, i) => (
               <motion.p
                 key={i}
@@ -57,7 +55,7 @@ export function About() {
             transition={{ duration: 0.5, delay: 0.4 }}
             className="space-y-3 pt-2"
           >
-            <p className="text-xs font-medium tracking-widest text-white/30 uppercase">
+            <p className="text-xs font-medium tracking-widest text-slate-400 uppercase">
               Research Interests
             </p>
             <div className="flex flex-wrap gap-2">
@@ -68,7 +66,7 @@ export function About() {
                   whileInView={{ opacity: 1, scale: 1 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.3, delay: 0.5 + i * 0.05 }}
-                  className="rounded-full border border-white/8 bg-white/[0.03] px-3 py-1 text-xs text-white/50 transition-colors hover:border-[#0d9488]/30 hover:text-white/70"
+                  className="rounded-full border border-slate-200 bg-slate-50 px-3 py-1 text-xs text-slate-600 transition-colors hover:border-teal-300 hover:bg-teal-50 hover:text-teal-700"
                 >
                   {interest}
                 </motion.span>

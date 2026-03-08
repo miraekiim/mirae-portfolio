@@ -28,7 +28,7 @@ export function Contact() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="font-serif text-3xl font-bold md:text-4xl"
+          className="font-heading text-3xl font-bold md:text-4xl"
         >
           Let&apos;s{" "}
           <span className="bg-gradient-to-r from-[#0d9488] to-[#7c3aed] bg-clip-text text-transparent">
@@ -41,7 +41,7 @@ export function Contact() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ delay: 0.1 }}
-          className="mt-4 text-white/40"
+          className="mt-4 text-slate-500"
         >
           Interested in collaboration or have questions about my research? Feel
           free to reach out.
@@ -67,16 +67,16 @@ export function Contact() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.3 + i * 0.1 }}
-              className="group flex items-center gap-3 rounded-xl border border-white/5 bg-white/[0.02] px-6 py-4 transition-all duration-300 hover:border-white/10 hover:bg-white/[0.04]"
+              className="group flex items-center gap-3 rounded-xl border border-slate-200 bg-white px-6 py-4 transition-all duration-300 hover:border-slate-300 hover:shadow-md"
             >
-              <link.icon className="h-5 w-5 text-white/40 transition-colors group-hover:text-[#0d9488]" />
+              <link.icon className="h-5 w-5 text-slate-400 transition-colors group-hover:text-teal-500" />
               <div className="text-left">
-                <p className="text-sm font-medium text-white/80">
+                <p className="text-sm font-medium text-slate-700">
                   {link.label}
                 </p>
-                <p className="text-xs text-white/30">{link.detail}</p>
+                <p className="text-xs text-slate-400">{link.detail}</p>
               </div>
-              <ArrowUpRight className="h-4 w-4 text-white/15 transition-all group-hover:translate-x-0.5 group-hover:-translate-y-0.5 group-hover:text-white/30" />
+              <ArrowUpRight className="h-4 w-4 text-slate-300 transition-all group-hover:translate-x-0.5 group-hover:-translate-y-0.5 group-hover:text-slate-500" />
             </motion.a>
           ))}
         </div>

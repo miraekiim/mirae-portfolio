@@ -15,7 +15,7 @@ export function Experience() {
 
       <div className="relative mt-12">
         {/* Timeline line */}
-        <div className="absolute left-[7px] top-2 bottom-2 w-px bg-gradient-to-b from-[#0d9488]/40 via-[#7c3aed]/20 to-transparent md:left-1/2 md:-translate-x-px" />
+        <div className="absolute left-[7px] top-2 bottom-2 w-px bg-gradient-to-b from-teal-300 via-violet-200 to-transparent md:left-1/2 md:-translate-x-px" />
 
         <div className="space-y-8 md:space-y-12">
           {experiences.map((exp, i) => (
@@ -32,30 +32,30 @@ export function Experience() {
               className="relative grid gap-4 md:grid-cols-2 md:gap-12"
             >
               {/* Timeline dot */}
-              <div className="absolute left-0 top-2 h-[15px] w-[15px] rounded-full border-2 border-[#0d9488]/60 bg-[#0a0a0f] md:left-1/2 md:-translate-x-1/2" />
+              <div className="absolute left-0 top-2 h-[15px] w-[15px] rounded-full border-2 border-teal-400 bg-white md:left-1/2 md:-translate-x-1/2" />
 
               {/* Date - left side on desktop */}
               <div
                 className={`pl-7 md:pl-0 ${i % 2 === 0 ? "md:text-right" : "md:order-2 md:text-left md:pl-8"}`}
               >
-                <p className="text-sm text-white/30">
+                <p className="text-sm text-slate-400">
                   {exp.startDate} — {exp.endDate}
                 </p>
-                <p className="mt-0.5 text-xs text-white/20">{exp.location}</p>
+                <p className="mt-0.5 text-xs text-slate-400">{exp.location}</p>
               </div>
 
               {/* Content - right side on desktop */}
               <div
-                className={`group ml-7 rounded-xl border border-white/5 bg-white/[0.02] p-4 md:p-5 transition-all duration-300 hover:border-white/10 hover:bg-white/[0.04] md:ml-0 ${i % 2 === 0 ? "md:pl-8" : "md:order-1 md:pr-8 md:text-right"}`}
+                className={`group ml-7 rounded-xl border border-slate-200 bg-white p-4 md:p-5 transition-all duration-300 hover:border-slate-300 hover:shadow-sm md:ml-0 ${i % 2 === 0 ? "md:pl-8" : "md:order-1 md:pr-8 md:text-right"}`}
               >
-                <h3 className="font-serif text-lg font-semibold text-white/90">
+                <h3 className="font-heading text-lg font-semibold text-slate-900">
                   {exp.role}
                 </h3>
-                <p className="mt-1 text-sm text-[#0d9488]/80">
+                <p className="mt-1 text-sm text-teal-600">
                   {exp.organization}
                 </p>
                 <ul
-                  className={`mt-3 space-y-1.5 text-sm text-white/50 ${i % 2 !== 0 ? "md:ml-auto" : ""}`}
+                  className={`mt-3 space-y-1.5 text-sm text-slate-500 ${i % 2 !== 0 ? "md:ml-auto" : ""}`}
                 >
                   {exp.description.map((desc, j) => (
                     <li key={j} className="leading-relaxed">
@@ -70,7 +70,7 @@ export function Experience() {
                     {exp.skills.map((skill) => (
                       <span
                         key={skill}
-                        className="rounded-full bg-white/[0.05] px-2 py-0.5 text-[10px] tracking-wide text-white/40"
+                        className="rounded-full bg-slate-100 px-2 py-0.5 text-[10px] tracking-wide text-slate-500"
                       >
                         {skill}
                       </span>

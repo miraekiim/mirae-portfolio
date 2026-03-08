@@ -36,9 +36,9 @@ function GlowCard({
       ref={ref}
       onMouseMove={handleMouseMove}
       className={cn(
-        "group relative overflow-hidden rounded-xl border border-white/5 bg-white/[0.02] transition-all duration-300 hover:border-white/10",
+        "group relative overflow-hidden rounded-xl border border-slate-200 bg-white transition-all duration-300 hover:border-slate-300 hover:shadow-md",
         "before:pointer-events-none before:absolute before:inset-0 before:rounded-xl before:opacity-0 before:transition-opacity before:duration-300 hover:before:opacity-100",
-        "before:bg-[radial-gradient(600px_circle_at_var(--glow-x)_var(--glow-y),rgba(13,148,136,0.06),transparent_40%)]",
+        "before:bg-[radial-gradient(600px_circle_at_var(--glow-x)_var(--glow-y),rgba(13,148,136,0.08),transparent_40%)]",
         className
       )}
     >
@@ -49,7 +49,7 @@ function GlowCard({
 
 function AuthorList({ authors }: { authors: string[] }) {
   return (
-    <p className="text-sm text-white/40">
+    <p className="text-sm text-slate-400">
       {authors.map((author, i) => (
         <span key={i}>
           {author === "Mirae Kim" ? (
@@ -95,26 +95,26 @@ export function Publications() {
         </div>
 
         {/* Filter tabs */}
-        <div className="flex gap-1 rounded-lg border border-white/5 bg-white/[0.02] p-1">
+        <div className="flex gap-1 rounded-lg border border-slate-200 bg-slate-50 p-1">
           {filters.map(({ key, label, count }) => (
             <button
               key={key}
               onClick={() => setFilter(key)}
               className={cn(
                 "relative rounded-md px-3 py-1.5 text-xs font-medium transition-colors",
-                filter === key ? "text-white" : "text-white/40 hover:text-white/60"
+                filter === key ? "text-slate-900" : "text-slate-400 hover:text-slate-600"
               )}
             >
               {filter === key && (
                 <motion.div
                   layoutId="pub-filter"
-                  className="absolute inset-0 rounded-md bg-white/[0.08]"
+                  className="absolute inset-0 rounded-md bg-white shadow-sm"
                   transition={{ type: "spring", stiffness: 380, damping: 30 }}
                 />
               )}
               <span className="relative">
                 {label}{" "}
-                <span className="text-white/25">{count}</span>
+                <span className="text-slate-400">{count}</span>
               </span>
             </button>
           ))}
@@ -141,7 +141,7 @@ export function Publications() {
                 <div className="flex gap-5 p-5 md:p-6">
                   {/* Year badge */}
                   <div className="flex shrink-0 flex-col items-center">
-                    <span className="rounded-lg bg-gradient-to-b from-[#0d9488]/15 to-[#7c3aed]/15 px-3 py-1.5 font-serif text-sm font-bold text-white/70">
+                    <span className="rounded-lg bg-teal-50 px-3 py-1.5 font-heading text-sm font-bold text-teal-700">
                       {pub.year}
                     </span>
                   </div>
@@ -149,7 +149,7 @@ export function Publications() {
                   {/* Content */}
                   <div className="min-w-0 flex-1 space-y-2">
                     <div className="flex items-start justify-between gap-3">
-                      <h3 className="font-serif text-base leading-snug font-semibold text-white/90 md:text-lg">
+                      <h3 className="font-heading text-base leading-snug font-semibold text-slate-900 md:text-lg">
                         {pub.title}
                       </h3>
                       {pub.url && (
@@ -157,7 +157,7 @@ export function Publications() {
                           href={pub.url}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="shrink-0 text-white/20 transition-colors hover:text-[#0d9488]"
+                          className="shrink-0 text-slate-300 transition-colors hover:text-teal-500"
                           aria-label={`Open ${pub.title}`}
                         >
                           <ExternalLink className="h-4 w-4" />
@@ -168,15 +168,15 @@ export function Publications() {
                     <AuthorList authors={pub.authors} />
 
                     <div className="flex flex-wrap items-center gap-2">
-                      <span className="text-sm text-white/50">
+                      <span className="text-sm text-slate-500">
                         {pub.venue}
                       </span>
                       <span
                         className={cn(
                           "rounded-full px-2 py-0.5 text-[10px] font-medium uppercase tracking-wider",
                           pub.venueType === "conference"
-                            ? "bg-[#0d9488]/10 text-[#0d9488]/70"
-                            : "bg-[#7c3aed]/10 text-[#7c3aed]/70"
+                            ? "bg-teal-50 text-teal-600"
+                            : "bg-violet-50 text-violet-600"
                         )}
                       >
                         {pub.venueType}
@@ -187,7 +187,7 @@ export function Publications() {
                       {pub.tags.map((tag) => (
                         <span
                           key={tag}
-                          className="rounded-full bg-white/[0.04] px-2 py-0.5 text-[10px] text-white/30"
+                          className="rounded-full bg-slate-100 px-2 py-0.5 text-[10px] text-slate-500"
                         >
                           {tag}
                         </span>

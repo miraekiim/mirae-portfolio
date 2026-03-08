@@ -23,7 +23,7 @@ export function Skills() {
             transition={{ duration: 0.5, delay: i * 0.1 }}
             className="space-y-3"
           >
-            <h3 className="text-xs font-medium tracking-widest text-white/30 uppercase">
+            <h3 className="text-xs font-medium tracking-widest text-slate-400 uppercase">
               {cat.category}
             </h3>
             <div className="flex flex-wrap gap-2">
@@ -34,7 +34,7 @@ export function Skills() {
                   whileInView={{ opacity: 1, scale: 1 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.3, delay: i * 0.1 + j * 0.04 }}
-                  className="rounded-lg border border-white/8 bg-white/[0.03] px-3 py-1.5 text-sm text-white/60 transition-all duration-300 hover:border-[#0d9488]/30 hover:bg-[#0d9488]/5 hover:text-white/80"
+                  className="rounded-lg border border-slate-200 bg-white px-3 py-1.5 text-sm text-slate-600 transition-all duration-300 hover:border-teal-300 hover:bg-teal-50 hover:text-teal-700"
                 >
                   {skill}
                 </motion.span>
