@@ -63,8 +63,8 @@ export function Navbar() {
             }}
             className="group relative font-heading text-xl font-bold"
           >
-            <span className="text-indigo-500 font-bold">
-              MK
+            <span className="text-slate-900 font-bold">
+              Mirae Kim
             </span>
             <span className="absolute -bottom-1 left-0 h-px w-0 bg-indigo-500 transition-all duration-300 group-hover:w-full" />
           </a>
