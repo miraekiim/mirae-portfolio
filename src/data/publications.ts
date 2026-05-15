@@ -1,6 +1,46 @@
 import { Publication } from "@/types";
 
 export const publications: Publication[] = [
+    {
+      id: "lrec-2026",
+      title:
+        "FENCE: A Financial and Multimodal Jailbreak Detection Dataset",
+      authors: [
+        "Mirae Kim",
+        "Seonghun Jeong",
+        "Youngjun Kwak",
+      ],
+      venue: "LREC 2026",
+      venueType: "conference",
+      year: 2026,
+      url: "https://doi.org/10.63317/4a35sc6sgwwv",
+      doi: "10.63317/4a35sc6sgwwv",
+      abstract:
+        "Large Language Models (LLMs) and Vision Language Models (VLMs). VLMs are particularly vulnerable because they process both text and images, creating broader attack surfaces. However, available resources for jailbreak detection are scarce, particularly in finance. To address this gap, we present FENCE, a bilingual (Korean–English) multimodal dataset for training and evaluating jailbreak detectors in financial applications. FENCE comprises 10k finance-domain text–image pairs across more than 15 finance categories, constructed via a three-step pipeline: transforming real-world financial FAQs into harmful queries using GPT-4o, collecting query-relevant images via keyword-based crawling, and fusing text and images with diverse layout strategies. Labels were assigned using GPT-4o as an evaluator, with human validation confirming 95% agreement. Experiments on 15 commercial and open-source VLMs reveal consistent vulnerabilities, with GPT-4o showing measurable attack success rates and open-source models displaying greater exposure. A baseline detector trained on FENCE achieves 99% in-distribution accuracy and maintains strong performance on external benchmarks. FENCE provides a focused resource for advancing multimodal jailbreak detection in finance and supporting safer AI deployment in sensitive domains.",
+      tags: ["Jailbreak Detection", "Multimodal", "Dataset"],
+  },  
+  {
+      id: "ejon-2026",
+      title:
+        "What do we want to know from a chatbot? Identifying inquiries among adult survivors of childhood and adolescent cancer in South Korea",
+      authors: [
+        "Min Ah Kim",
+        "Mirae Kim",
+        "Yehwi Park",
+        "Chaerim Park",
+        "Chungyeon Lee",
+        "Kyubum Hwang",
+        "Hayoung Oh",
+      ],
+      venue: "European Journal of Oncology Nursing",
+      venueType: "journal",
+      year: 2026,
+      url: "https://www.sciencedirect.com/science/article/pii/S1462388926001079",
+      doi: "10.1016/j.ejon.2026.103202",
+      abstract:
+        "Purpose: The impact of diagnosis and treatment on adult survivors of childhood and adolescent cancer gives rise to unique informational needs, highlighting the need for alternative methods to address their questions. However, topics of interest to this population remain unclear. This study explored the primary inquiries expressed by survivors when engaging with a chatbot tailored to address their needs and examined how these inquiries related to participant characteristics. Method: A sample of 119 adult survivors of childhood and adolescent cancer completed an online survey regarding inquiries for a tailored chatbot. A comprehensive three-step approach to topic modeling and content analysis was conducted. Results: The analyses classified 1237 questions into 11 topics: health and daily life management; psychological distress; cancer history disclosure; coping with side and late effects; causes, diagnosis, and treatment of cancer; social policy and services; academic continuity and school reentry; social relationships and reintegration; concerns related to cancer recurrence; peer survivors and communication; and social stigma and coping. The topics differed based on age group, education level, recurrence, age at diagnosis, and time since diagnosis. Conclusions: These findings underscore the importance of addressing diverse informational needs regarding health and psychosocial concerns among cancer survivors. Findings also highlight the critical role of oncology professionals in overseeing digital triage and psychosocial assessment and delivering tailored support to meet the concerns of survivors as they navigate challenges and opportunities in adulthood, ultimately promoting their overall health and well-being.",
+      tags: ["Topic Modeling", "Chatbot", "Cancer Survivorship"],
+  },
   {
     id: "caee-2026",
     title:
